@@ -5,22 +5,22 @@
 
 ## 统一度量衡
 
-**判定维度**（运行级四档，仅已定位条目 1682 个进入统计；测试：dsh 容器 agent + Qwen3.6-35B · k8s 5 分片 · run_id 锚定轮次）：
+**判定维度**（运行级四档，仅已定位条目 1684 个进入统计；测试：dsh 容器 agent + Qwen3.6-35B · k8s 5 分片 · run_id 锚定轮次）：
 
-- `[可用]`（1031）/ `[不兼容]`（371）/ `[待定]`（152）/ `[未测]`（128）
+- `[可用]`（1033）/ `[不兼容]`（371）/ `[待定]`（152）/ `[未测]`（128）
 
 **定位维度**（与判定正交；监测类不显示对错判定，原始结果保留于快照层）：
 
 - `[空仓监测]`（67）— GitHub 复核无此仓库；待重现后恢复判定显示
-- `[歧义监测]`（102）— 同名多仓无法锁定本体；锁定前不展示
+- `[歧义监测]`（100）— 同名多仓无法锁定本体；锁定前不展示
 - `[未定位]`（38）— 新占位条目，待下一轮定位复核（scripts/resolve_placeholders.py）
 - 定位复核累计修复 566 个占位 URL
 
 > 〔PR〕= 经已合并 PR 正式登记；收录 ≠ 兼容 ≠ 运行可用 ≠ 安全审计。
 
-## 汇总：1889 条（已定位 1682 · 监测/未定位 207）· PR 登记 22 个
+## 汇总：1889 条（已定位 1684 · 监测/未定位 205）· PR 登记 22 个
 
-## 🎓 技能包（18）
+## 🎓 技能包（19）
 
 - `[可用]` [forkprobe](https://github.com/Jayden-X-L/forkprobe) 66 — Compare multiple skills on the same task and pick the winner.
 - `[不兼容]` [mstar-harness](https://github.com/btspoony/mstar-harness) 46 — A Skill-driven Harness/Loop Engineering Workflow Agent Plugin
@@ -40,6 +40,7 @@
 - `[可用]` [DSH-plugin-switch](https://github.com/Nexus-Aethra/DSH-plugin-switch) 2 — DSH Plugin Switch is a marketplace for DeepSeek Harness plugins and skills
 - `[可用]` [dsh-data-ledger](https://github.com/Niuniu-Sir/dsh-data-ledger) 2 — 数据台账：DeepSeek Harness 本地数据统一看板——对话/账本/技能/记忆/日志的来源、位置与内容摘要，回收站删除、浏览器存储清理（dsh-plugin）
 - `[可用]` [dsh-wanghong-handwritten-ppt](https://github.com/tjxj/dsh-wanghong-handwritten-ppt) 2 — 王虹学术手写风 PPT Skill for DeepSeek Harness · Notability-style HTML slides and PNG ex
+- `[可用]` [embedded-workbench](https://github.com/AmethystLuna/embedded-workbench) 0 — 嵌入式 C/C++ 固件工程插件：8 skills（FreeRTOS/Keil/ARMCLANG/HardFault/状态机/LVGL/架构），dsh 原生 bundle 注入会话启动纪律门（1% Rule / Red Flags / Plan Verification Gate）
 
 ## 🧠 记忆增强（20）
 
@@ -353,7 +354,7 @@
 - `[不兼容]` [dsh-tui-app](https://github.com/kouyichi/dsh-tui-app) 0 — DeepSeek Harness terminal UI plugin (Ink/React)
 - `[待定]` [dsh-Solarized](https://github.com/zhijun-dai/dsh-Solarized) 0 — Solarized + Selenized themes for DeepSeek Harness (dsh): four faithful palettes
 
-## 💻 编码开发（253）
+## 💻 编码开发（254）
 
 - `[未测]` [TokenTracker](https://github.com/xiufengsun/TokenTracker) 1312 — Local-first AI token usage & cost tracker for 31 coding tools incl
 - `[不兼容]` [paean-ai-deeptide](https://github.com/paean-ai/deeptide) 1066 — —
@@ -552,6 +553,7 @@
 - `[可用]` [dsh-figma-to-lottie](https://github.com/zimai233/dsh-figma-to-lottie) 1 — Figma/SVG to Lottie animation compiler for DeepSeek Harness
 - `[未测]` [dsh-plugin-code-review](https://github.com/YYTbit/dsh-plugin-code-review) 1 — Structured code review skill for DeepSeek Harness
 - `[可用]` [dsh-plugin-git-inspect](https://github.com/Wanbinyu/dsh-plugin-git-inspect) 1 — Read-only Git inspection tools for DeepSeek Harness
+- `[可用]` [logicprobe](https://github.com/AmethystLuna/logicprobe) 1 — 设计文档与重构计划声明核查：claim 枚举 + 代码库事实核对 + 逻辑原语验证（7 结构 + 7 对抗探针），dsh 原生 bundle 注入核查纪律门
 - `[可用]` [dsh-upstream-watch](https://github.com/t479842598/dsh-upstream-watch) 1 — DSH plugin: watch GitHub upstream repos for new commits on default branch, live
 - `[待定]` [dsh-provider-billing](https://github.com/ZeroingIn/dsh-provider-billing) 1 — DeepSeek Harness plugin: provider account balance inside each Models settings ro
 - `[不兼容]` [dsh-web-search-exa](https://github.com/TonyDua/dsh-web-search-exa) 1 — Zero-config Exa web search provider for DeepSeek Harness (dsh): keyless anonymou
@@ -950,7 +952,7 @@
 - `[待定]` [dsh-plugin-qqbot](https://github.com/Yunqingqingxi/dsh-plugin-qqbot) 0 — QQ Bot transport adapter for DeepSeek Harness: drive agents from QQ chat, stream replies back.
 - `[不兼容]` [dsh-whale-diving](https://github.com/ZeroCode321/dsh-whale-diving) 0 — A decorative whale-diving activity icon for the DeepSeek Harness Web chat flow:
 
-## 🗂 文件数据（77）
+## 🗂 文件数据（76）
 
 - `[可用]` [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) 67 — OpenPencil design preview and editing plugin for DSH
 - `[待定]` [dsh-plugin-mineru](https://github.com/HuanLinOTO/dsh-plugin-mineru) 26 — 向模型暴露 MinerU 文档解析工具，将 PDF/图片/DOCX/PPTX/XLSX 转为结构化 Markdown/JSON \| Exposes MinerU document-parsing tools to the
@@ -1025,7 +1027,6 @@
 - `[歧义监测]` **dsh-artifact** — 同名多仓，判定暂不展示 〔PR〕
 - `[未测]` [dsh-file-checksum](https://github.com/yan9651688/dsh-file-checksum) 0 — Raw-file SHA-256 and SHA-512 verification plugin for DeepSeek Harness
 - `[歧义监测]` **dsh-mineru** — 同名多仓，判定暂不展示
-- `[歧义监测]` **embedded-workbench** — 同名多仓，判定暂不展示
 - `[待定]` [dsh-rich-file-reader](https://github.com/shixiliya1/dsh-rich-file-reader) 0 — Local image, Office, and PDF reader plugin for DeepSeek Harness
 - `[可用]` [dsh-plugin-recall](https://github.com/truelove-dreamer/dsh-plugin-recall) 0 — DeepSeek Harness plugin: cross-session memory for the model
 - `[待定]` [dsh-silly-plugin](https://github.com/xiagaogaozi/dsh-silly-plugin) 0 — DSH 酒馆模式：导入 SillyTavern 角色卡（PNG/JSON），自动拆分世界书/正则/脚本并创建同名工作区（#dsh-plugin）
@@ -1320,7 +1321,7 @@
 - `[未测]` [dsh-plugin-wallpaper](https://github.com/Tree-Summer/dsh-plugin-wallpaper) 0 — 可以在deepseek harness网页端自定义背景图片的插件
 - `[歧义监测]` **dsh-wallpaper** — 同名多仓，判定暂不展示
 
-## ❓ 其他（625）
+## ❓ 其他（624）
 
 - `[可用]` [deepseek-ai-deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) 124593 — —
 - `[可用]` [devin-axis-ipollowork](https://github.com/Devin-AXIS/iPolloWork) 4131 — —
@@ -1919,7 +1920,6 @@
 - `[歧义监测]` **harness-doctor** — 同名多仓，判定暂不展示
 - `[未测]` [koishi-plugin-adapter-harness](https://github.com/nazidada/koishi-plugin-adapter-harness) 0 — —
 - `[未测]` [LanternDesk](https://github.com/zh667/LanternDesk) 0 — —
-- `[歧义监测]` **logicprobe** — 同名多仓，判定暂不展示
 - `[歧义监测]` **mimo-vision** — 同名多仓，判定暂不展示
 - `[空仓监测]` **silly-harness** — GitHub 无此仓库，判定暂不展示
 - `[歧义监测]` **token-statistics** — 同名多仓，判定暂不展示
